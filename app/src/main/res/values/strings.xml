@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AlcanciaVirtual</string>
+
+    <string name="btnAhorrar">Ahorrar</string>
+    <string name="btnGuardar">Guardar</string>
+    <string name="lblAhorrarDinero">Ahorrar Dinero</string>
+    <string name="lblAgregarMontoSaldo">Agregar monto al saldo</string>
+    <string name="lblSacarDinero">Sacar Dinero</string>
+    <string name="lblRetirarMonto">Retirar monto del saldo</string>
+    <string name="btnGuardarSacar">Guardar</string>
+
+</resources>
