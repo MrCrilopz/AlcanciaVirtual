@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Principal_y_saldo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:gravity="center"
+            android:text="SALDO"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/Pag_principal_saldoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="137dp"
+            android:gravity="center"
+            android:text="Saldo: $0.00"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/botonAhorrarPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Ahorrar dinero" />
+
+        <Button
+            android:id="@+id/botonSacarPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Sacar dinero" />
+
+        <Button
+            android:id="@+id/botonVerHistorialPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Ver historial" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
