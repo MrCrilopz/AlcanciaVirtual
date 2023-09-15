@@ -4,8 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
 import android.widget.Button
-import android.util.Log
-
+import android.widget.TextView
 
 class Principal_y_saldo : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,21 +14,24 @@ class Principal_y_saldo : AppCompatActivity() {
         val botonAhorrar = findViewById<Button>(R.id.botonAhorrarPrincipal)
         val botonSacar = findViewById<Button>(R.id.botonSacarPrincipal)
         val botonVerHistorial = findViewById<Button>(R.id.botonVerHistorialPrincipal)
+        val saldoTextView = findViewById<TextView>(R.id.saldoTextView)
 
-        // Configurar un OnClickListener para el botón "Ahorrar dinero"
+        // Obtener el saldo actualizado
+        val saldoActualizado = CuentaSingleton.cuenta.saldo
+
+        // Actualizar el TextView con el nuevo saldo
+        saldoTextView.text = saldoActualizado.toString()
+
         botonAhorrar.setOnClickListener {
-            Log.d("MiApp", "Botón Ahorrar clickeado")
             val intent = Intent(this, Ahorrar_dinero::class.java)
             startActivity(intent)
         }
 
-        // Configurar un OnClickListener para el botón "Sacar dinero"
         botonSacar.setOnClickListener {
             val intent = Intent(this, Sacar_dinero::class.java)
             startActivity(intent)
         }
 
-        // Configurar un OnClickListener para el botón "Ver historial"
         botonVerHistorial.setOnClickListener {
             val intent = Intent(this, Historial::class.java)
             startActivity(intent)

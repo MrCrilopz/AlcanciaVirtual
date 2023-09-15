@@ -29,19 +29,20 @@
             android:textColor="@android:color/black"
             android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/Ahorrar_saldoTextView"
+        <EditText
+            android:id="@+id/textoGuardarDinero"
             android:layout_width="match_parent"
             android:layout_height="137dp"
             android:gravity="center"
-            android:text="Guardar: $0.00"
+            android:hint="Ingrese el dinero:"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
 
         <Button
             android:id="@+id/botonGuardarDinero"
-            android:layout_width="match_parent"
+            android:layout_width="130dp"
             android:layout_height="80dp"
+            android:layout_gravity="center"
             android:text="Guardar" />
 
     </LinearLayout>

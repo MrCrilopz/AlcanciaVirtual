@@ -21,11 +21,10 @@
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/Pag_principal_saldoTextView"
+            android:id="@+id/saldoTextView"
             android:layout_width="match_parent"
             android:layout_height="137dp"
             android:gravity="center"
-            android:text="Saldo: $0.00"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
 
