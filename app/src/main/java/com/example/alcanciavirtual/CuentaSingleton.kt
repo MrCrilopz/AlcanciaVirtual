@@ -1,6 +1,7 @@
 import com.example.alcanciavirtual.Cuenta
 import java.text.SimpleDateFormat
 import java.util.Date
+import java.util.TimeZone
 
 object CuentaSingleton {
     val cuenta = Cuenta()
@@ -21,8 +22,9 @@ object CuentaSingleton {
     }
 
     private fun registrarMovimiento(movimiento: String) {
-        // Obtener la fecha y hora actual
+        // Obtener la fecha y hora actual en la zona horaria de Bogotá (GMT-5)
         val formato = SimpleDateFormat("dd/MM/yyyy HH:mm:ss")
+        formato.timeZone = TimeZone.getTimeZone("America/Bogota")
         val fechaHora = formato.format(Date())
 
         // Agregar el movimiento con fecha y hora al historial
